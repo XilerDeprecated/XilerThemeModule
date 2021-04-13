@@ -1,6 +1,6 @@
 {
   "name": "@xiler/theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Contains the theme for the Xiler website",
   "main": "lib/index.js",
   "types": "lib/types.d.ts",
