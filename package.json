@@ -1,0 +1,34 @@
+{
+  "name": "@xiler/theme",
+  "version": "1.0.0",
+  "description": "Contains the theme for the Xiler website",
+  "main": "lib/index.js",
+  "types": "lib/types.d.ts",
+  "files": ["lib/**/*"],
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "build": "run tsc",
+    "prepare": "run build",
+    "prepublishOnly": "run lint",
+    "preversion": "run lint",
+    "version": "run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XilerPrivate/XilerThemeExtension.git"
+  },
+  "author": "Xiler Network <dev@xiler.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XilerPrivate/XilerThemeExtension/issues"
+  },
+  "homepage": "https://github.com/XilerPrivate/XilerThemeExtension#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.2.4"
+  }
+}
