@@ -1,6 +1,6 @@
 {
   "name": "@xiler/theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Contains the theme for the Xiler website",
   "main": "lib/index.js",
   "types": "lib/types.d.ts",
@@ -9,10 +9,10 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "build": "run tsc",
-    "prepare": "run build",
-    "prepublishOnly": "run lint",
-    "preversion": "run lint",
-    "version": "run format && git add -A src",
+    "prepare": "yarn run build",
+    "prepublishOnly": "yarn run lint",
+    "preversion": "yarn run lint",
+    "version": "yarn run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
   "repository": {
